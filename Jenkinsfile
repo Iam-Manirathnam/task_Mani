@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        ECR_REPO_URI = 'your-account-id.dkr.ecr.us-east-1.amazonaws.com/your-repo'
-        IMAGE_TAG = "latest"
-    }
-
     stages {
         stage('Checkout') {
             steps {
